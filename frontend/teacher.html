@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Teacher: Everyone Learns!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="layout.css">
+<script src="teacher.js"></script>
+</head>
+<body onload="displayExercises()">
+
+<div class="topnav">
+  <a href="javascript:displayExercises();">Exercises</a>
+  <a href="javascript:displaySubmissions();">Submissions</a>
+  <a href="javascript:displayAbout();">About</a>
+  <a class="logout" href="/logout">Logout</a>
+</div>
+
+<div class="content" id="exercisesContent">
+  <h2>Exercises</h2>
+  <div id="exercisesData"></div>
+</div>
+
+<div class="content" id="submissionsContent" style="display: none">
+    <h2>Results</h2>
+    <div id="submissionsData"></div>
+</div>
+
+<div class="content" id="aboutContent" style="display: none">
+    <h2>About</h2>
+    <div id="aboutData">
+        <h3>Did you know... You are the best teacher!</h3>
+        <p>because you are using the best classroom management software!!!</p>
+        <p>You can tell that all other teachers</p>
+        <p><i>Made with &#10084; in Graz</i></p>
+    </div>
+</div>
+</body>
+</html>

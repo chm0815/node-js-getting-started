@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student: Everyone Learns!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="layout.css">
+<script src="student.js"></script>
+</head>
+<body onload="displayExercises()">
+
+<div class="topnav">
+  <a href="javascript:displayExercises();">Exercises</a>
+  <a href="javascript:displayResults();">Results</a>
+  <a href="javascript:displayAbout();">About</a>
+  <a class="logout" href="/logout">Logout</a>
+</div>
+
+<div class="content" id="exercisesContent">
+  <h2>Exercises</h2>
+  <div id="exercisesData"></div>
+</div>
+
+<div class="content" id="resultsContent" style="display: none">
+    <h2>Results</h2>
+    <div id="resultsData"></div>
+</div>
+
+<div class="content" id="aboutContent" style="display: none">
+    <h2>About</h2>
+    <div id="aboutData">
+        <h3>You need to know: Everyone Learns Classroom is the best virtual classroom!</h3>
+        <p>Thanks for using Everyone Learns, tell everybody that this is the best classroom management software!!!</p>
+        <p>It was developed with extremely high security considerations... Really!</p>
+        <p><i>Made with &#10084; in Graz and proudly made without React, Angular, jQuery and Java</i></p>
+    </div>
+</div>
+
+
+</body>
+</html>
