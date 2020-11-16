@@ -33,7 +33,7 @@ app.use(session({
     saveUninitialized: true}
 ));
 
-connection = mysql.createConnection(dbconfig.dbSettings);
+connection = mysql.createConnection(process.env.JAWSDB_MARIA_URL || dbconfig.dbSettings);
 connection.connect((err) => {
     if(err) {
         console.log('Error connecting to DB: change connection settings!');
